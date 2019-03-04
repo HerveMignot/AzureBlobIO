@@ -15,6 +15,8 @@ using the right connection string to Azure Blog storage.
 Then, files can be read wherever `ByteIO` streams are supported.
 
     import pandas as pd
+    from azureblobio import AzureBlobIO
+    
     my_df = pd.read_csv(AzureBlobIO(blob_service, 'datasets', 'titanic.csv'))
 
 
